@@ -24,4 +24,16 @@ class MyQueue {
 	    return -1;
 		// Your code here
 	} 
+	 boolean isEmpty() {
+        return front == rear;
+    }
+    
+    // Optional method to get the front element without popping it
+    int peek() {
+        if (front < rear) {
+            return arr[front];
+        } else {
+            return -1;  // Queue is empty
+        }
+    }
 }

@@ -32,15 +32,20 @@ class MinHeap{
     }
     void add(int n)
     {
+        if (size >= heap.length) {
+            System.out.println("Heap is full");
+            return;
+        }
         heap[size]=n;
-        int i=size++;
+        int i=size;
         
         
         while(i<size && heap[i]<heap[(i-1)/2])
         {
             swap(i,(i-1)/2);
-            i=i-(i-1)/2;
+            i=(i-1)/2;
         }
+        size++;
     }
     int extractMin(){
         

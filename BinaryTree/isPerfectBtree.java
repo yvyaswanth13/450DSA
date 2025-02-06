@@ -1,7 +1,21 @@
 N= 2^d -1
 N=no.of Nodes
 d=depth of tree
+ d=h+1 (h= height)
+
  no.of edege+1 =depth(height)
+        1  <- Depth 0
+      / \
+     2   3  <- Depth 1
+    / \
+   4   5  <- Depth 2
+------------------------------
+       1  <- Level 1
+      / \
+     2   3  <- Level 2
+    / \
+   4   5  <- Level 3
+
 
 class Node {
     int data;

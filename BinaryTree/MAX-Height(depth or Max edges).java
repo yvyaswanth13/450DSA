@@ -14,7 +14,7 @@ class Node {
 
 class GfG {
 
-    // Returns height which is the number of edges
+    // Returns height which is the number of edges+1
     // along the longest path from the root node down 
     // to the farthest leaf node.
     static int height(Node root) {
@@ -42,6 +42,6 @@ class GfG {
         root.left.left = new Node(5);
         root.left.right = new Node(11);
 
-        System.out.println(height(root));
+        System.out.println(height(root)); // 3
     }
 }

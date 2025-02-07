@@ -1,3 +1,10 @@
+/*int beg = 0;
+int end = 7;         // Since arr.length = 8
+int mid = (beg + end) / 2; // mid = (0 + 7) / 2 = 3
+
+int n1 = mid - beg + 1; // n1 = 3 - 0 + 1 = 4
+int n2 = end - mid;     // n2 = 7 - 3 = 4
+*/
 class Merge {  
   
 /* Function to merge the subarrays of a[] */  

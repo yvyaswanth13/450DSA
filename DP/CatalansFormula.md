@@ -24,6 +24,7 @@ If we substitute j=i−1, then:
 
 When i=1, we get j=0.
 When i=n, we get j=n−1.
+
 The first few Catalan numbers for n = 0, 1, 2, 3, … are : 1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, …  
     
 

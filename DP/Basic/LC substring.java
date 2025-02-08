@@ -1,3 +1,4 @@
+// you should not dp[m][n] in case of LCsubstring;
 public int LCS(String str1, String str2) {
     int m = str1.length();
     int n = str2.length();

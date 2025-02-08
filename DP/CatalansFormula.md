@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/applications-of-catalan-numbers/
+
 --The nth term in the sequence denoted Cn, is found in the following formula: 
 C(n) = (2n)! / ((n+1)! * n!) 
 

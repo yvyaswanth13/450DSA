@@ -57,9 +57,12 @@ Return 1 for minJumpsRecur(3, arr).
 
 Step 5: Backtracking Updates
 We update ans as we return:
-Returning to Index 2
+
+//here ans= Integer.MAX_VALUE;
 ->The jump from index 2 → 3 took 1 step.
 ->ans = Math.min(ans, 1 + 1) = 2
+                      note: this 1 is frm (min(3,arr)
+
 ->Return 2 for minJumpsRecur(2, arr).
 Returning to Index 1
 ->The jump from index 1 → 2 took 1 step.

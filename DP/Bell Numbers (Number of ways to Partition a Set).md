@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/bell-numbers-number-of-ways-to-partition-a-set/
+
 What is a Bell Number? 
 Let S(n, k) be total number of partitions of n elements into k sets. The value of the n’th Bell Number is the sum of S(n, k) for k = 1 to n. 
 Bell(n)=∑​S (n,k) for k ranges from [1,n]

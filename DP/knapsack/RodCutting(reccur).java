@@ -2,13 +2,14 @@ class RodCutting {
     public static int fun(int[] arr, int ind, int N) {
         if (ind == 0) return N * arr[0]; // 0 index also can use to cut rod with arr[0] value;
 
-        int nottake = fun(arr, ind - 1, N);
+        
         int take = Integer.MIN_VALUE;
         int rodlength = ind + 1;
 
         if (rodlength <= N) {
             take = arr[ind] + fun(arr, ind, N - rodlength);
         }
+        int nottake = fun(arr, ind - 1, N);
 
         return Math.max(take, nottake);
     }

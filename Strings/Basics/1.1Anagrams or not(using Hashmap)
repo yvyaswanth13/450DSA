@@ -1,26 +1,38 @@
 // Java Code to check if two Strings are anagrams of 
 // each other using sorting TC O(M+N)
 
-import java.util.Arrays;
+
+import java.util.HashMap;
 
 class GfG {
-
-    // Function to check if two strings are anagrams
+    
     static boolean areAnagrams(String s1, String s2) {
         
-        // Sort both strings
-        char[] s1Array = s1.toCharArray();
-        char[] s2Array = s2.toCharArray();
-        Arrays.sort(s1Array);
-        Arrays.sort(s2Array);
-
-        // Compare sorted strings
-        return Arrays.equals(s1Array, s2Array);
+        // Create a hashmap to store character frequencies
+        HashMap<Character, Integer> charCount = new HashMap<>();
+        
+        // Count frequency of each character in string s1
+        for (char ch : s1.toCharArray()) 
+            charCount.put(ch, charCount.getOrDefault(ch, 0) + 1);
+  
+        // Count frequency of each character in string s2
+        for (char ch : s2.toCharArray()) 
+            charCount.put(ch, charCount.getOrDefault(ch, 0) - 1);
+  
+        // Check if all frequencies are zero
+        for (var pair : charCount.entrySet()) {
+            if (pair.getValue() != 0) {
+                return false;
+            }
+        }
+        
+        // If all conditions satisfied, they are anagrams
+        return true;
     }
 
     public static void main(String[] args) {
         String s1 = "geeks";
         String s2 = "kseeg";
-        System.out.println(areAnagrams(s1, s2));
+        System.out.println(areAnagrams(s1, s2) ? "true" : "false");
     }
 }

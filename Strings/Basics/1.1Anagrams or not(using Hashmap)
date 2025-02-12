@@ -1,5 +1,5 @@
 // Java Code to check if two Strings are anagrams of 
-// each other using sorting
+// each other using sorting TC O(M+N)
 
 import java.util.Arrays;
 

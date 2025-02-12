@@ -35,7 +35,16 @@ static int resultLength;
 	}
 
 }
+/*
+For "bccb":
 
+When the loop exits:
+begin = -1, end = 4
+The actual start is at index 0 → begin + 1
+The actual end is at index 3 → end - 1
+Correct substring: "bccb"
+
+*/
 /*
 TC:
 Sample Input 1:

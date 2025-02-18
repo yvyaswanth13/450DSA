@@ -28,7 +28,7 @@ public class MergeKSortedLists {
         while (!pq.isEmpty()) {
             Node top = pq.poll();
             curr.next = top;
-            curr = top;
+            curr = top; // or curr=curr.next;
             
             if (top.next != null) {
                 pq.add(top.next);

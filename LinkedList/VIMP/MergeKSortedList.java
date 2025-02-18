@@ -13,6 +13,8 @@ class Node {
 public class MergeKSortedLists {
     static Node mergeKSortedList(List<Node> arr, int K) {
         PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.data));
+        //PriorityQueue<Node> pq = new PriorityQueue<>((a, b) -> Integer.compare(a.data, b.data));
+        //   PriorityQueue<Node> pq = new PriorityQueue<>((a, b) -> a.data - b.data);
         
         for (Node a : arr) {
             if (a != null) { // Avoid adding null nodes

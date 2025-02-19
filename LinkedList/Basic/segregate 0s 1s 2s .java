@@ -1,3 +1,4 @@
+https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1?page=1&category=Linked%20List&difficulty=Medium&sortBy=submissions
   static Node segregate(Node head) {
         // add your code here
         Node zeroD =new Node(-1);
@@ -41,3 +42,5 @@
         return zeroD.next;
     
     }
+ i/p :1 2 2 1 2 0 2 2  
+o/p: 0 1 1 2 2 2 2 2

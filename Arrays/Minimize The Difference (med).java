@@ -2,7 +2,7 @@
 // https://practice.geeksforgeeks.org/problems/minimize-the-heights3351/1
 
 You will get actual mi and ma and you wiull compare with them other do we have any other elements in array that give min diff b/w min and max by mdodifing with +m and -m 
-(min(Why + for Min becz if you do - it may go - so -*- will be +)  and
+
 max( if we do + here we may not archive Min diff : 
 you have min =1 and next elemet is 10 then if you do 10+2=12 dif=12-1(min)=9 in case of -> " -" 10-2(m=2)=8 and min=1 8-1 =7. So,7 < 8;
 import java.util.* ;

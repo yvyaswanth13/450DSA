@@ -32,6 +32,12 @@ class Gfg {
                 System.out.print(d.get(s.charAt(i)) + " ");
                d.put(s.charAt(i), 0);
             }
+            /*
+            or
+         for (var entry : d.entrySet()) {
+            System.out.println(entry.getKey() + "" + entry.getValue());
+        }
+            */
         }
     }
 

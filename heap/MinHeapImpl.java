@@ -12,9 +12,9 @@ class MinHeap{
         int l=2*i+1;
         int r=2*i+2;
         int small=i;
-        if(l< size && heap[l]<heap[i] )
+        if(l< size && heap[l]<heap[small] )
         small=l;
-        if(r< size && heap[r]<heap[i] )
+        if(r< size && heap[r]<heap[small] )
         small=r;
         
         if(i!=small)

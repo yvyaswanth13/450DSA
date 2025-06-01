@@ -17,6 +17,11 @@ class GfG {
     // Returns height which is the number of edges+1
     // along the longest path from the root node down 
     // to the farthest leaf node.
+    /*📌 Summary:
+Return for null	    Leaf height	    Meaning
+    -1	                   0	        Height = number of edges
+    0	                   1	        Height = number of nodes*/
+    
     static int height(Node root) {
         if (root == null)
             return -1;

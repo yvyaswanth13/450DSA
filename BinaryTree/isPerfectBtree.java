@@ -2,6 +2,16 @@ N= 2^d -1
 N=no.of Nodes
 d=depth of tree
  d=h+1 (h= height)
+ Conceptually, though:
+🌲 Height of a node:
+The length (edges or nodes) of the longest path from that node to a leaf.
+
+It is measured downward from the node.
+
+🌲 Depth of a node:
+The length (edges or nodes) of the path from the root to that node.
+
+It is measured upward from the root.
 
  no.of edege+1 =depth(height)
         1  <- Depth 0
@@ -46,7 +56,7 @@ class GfG {
 
     // Function to check if tree is perfect
     static boolean isPerfect(Node root) {
-        int d = depth(root); // Height in nodes
+        int d = depth(root); // Height in nodes(Node‐based height (or depth in levels):) not height of edges (in case of height of edges return -1 and d=h+1)
         int N = totalNodes(root);
         
         // Check the perfect tree condition
